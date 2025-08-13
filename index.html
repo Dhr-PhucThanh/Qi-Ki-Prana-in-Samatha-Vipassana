@@ -1,90 +1,590 @@
-<div class="fb-video" data-href="https://www.facebook.com/Dhr.PhucThanh/videos/4074290532806419/" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/Dhr.PhucThanh/videos/4074290532806419/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Dhr.PhucThanh/videos/4074290532806419/"></a><p>ỨNG DỤNG NĂNG LƯỢNG SỐNG TRONG CÁC KỸ THUẬT THỰC HÀNH THIỀN, THIỀN QUÁN VÀ THIỀN CHỈ [*]
-(PHẦN III)
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá: Minh Triết Cổ Đông & Khoa Học Hiện Đại</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Zen Earth -->
+    <!-- Application Structure Plan: Ứng dụng được cấu trúc theo 5 chủ đề chính: Trang Chủ, Nền Tảng Triết Học, Đối Thoại Khoa Học, Pháp Tu Tập, và Tổng Hợp. Cấu trúc này tổng hợp thông tin từ ba báo cáo thành một hành trình logic cho người dùng, bắt đầu từ các khái niệm nền tảng, chuyển sang bằng chứng khoa học, các ứng dụng thực tế, và cuối cùng là một bản tóm tắt tích hợp. Cách tiếp cận theo chủ đề này giúp người dùng dễ dàng khám phá và so sánh các lĩnh vực khác nhau, trực quan hơn so với việc tuân theo cấu trúc tuyến tính của bất kỳ báo cáo riêng lẻ nào. Các tương tác chính bao gồm điều hướng theo thẻ, biểu đồ so sánh, và sơ đồ tương tác để thúc đẩy sự khám phá. -->
+    <!-- Visualization & Content Choices: Báo cáo Thông tin -> Mục tiêu -> Phương pháp Trực quan/Trình bày -> Tương tác -> Lý do -> Thư viện/Phương pháp. 
+    1. So sánh các nhà thần kinh học (Davidson, Lazar, Newberg) -> So sánh -> Biểu đồ cột ngang -> Di chuột để xem chi tiết -> Trực quan hóa dữ liệu trong bảng một cách hấp dẫn, dễ so sánh hơn văn bản -> Chart.js.
+    2. Năm Hội Chú Lăng Nghiêm -> Sắp xếp/Khám phá -> Sơ đồ tròn tương tác -> Nhấp vào từng hội để xem chi tiết -> Biến một khái niệm phức tạp, có cấu trúc thành một công cụ khám phá trực quan, hấp dẫn -> HTML/CSS/JS.
+    3. Đạo đức AI & Bát Chánh Đạo -> Sắp xếp/Khám phá -> Lưới tương tác -> Nhấp vào mỗi chánh đạo để xem nguyên tắc AI -> Làm cho việc ánh xạ các khái niệm trừu tượng trở nên rõ ràng và dễ tiêu hóa -> HTML/CSS/JS.
+    4. Các khối văn bản dài -> Thông báo -> Thẻ có thể mở rộng (accordion) -> Nhấp để mở/đóng -> Ngăn người dùng bị choáng ngợp bởi lượng lớn văn bản, cho phép họ tập trung vào từng phần -> HTML/CSS/JS.
+    Tất cả các lựa chọn này đều nhằm mục đích tăng cường sự tương tác và hiểu biết của người dùng, biến nội dung tĩnh thành một trải nghiệm khám phá năng động. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fdfdfc;
+            color: #3f3f46;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #a16207;
+            transition: width 0.3s;
+        }
+        .nav-link.active, .nav-link:hover {
+            color: #a16207;
+        }
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+        .tab-button {
+            transition: all 0.3s ease;
+        }
+        .tab-button.active {
+            background-color: #a16207;
+            color: #ffffff;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .content-section {
+            display: none;
+            animation: fadeIn 0.8s;
+        }
+        .content-section.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e7e5e4;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        .shurangama-diagram-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        @media (min-width: 1024px) {
+            .shurangama-diagram-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .shurangama-diagram {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+        }
+        .shurangama-center, .shurangama-satellite {
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            padding: 8px;
+        }
+        .shurangama-center {
+            width: 30%;
+            height: 30%;
+            top: 35%;
+            left: 35%;
+            background-color: #fde68a;
+            color: #78350f;
+            font-weight: 700;
+        }
+        .shurangama-satellite {
+            width: 25%;
+            height: 25%;
+            background-color: #e7e5e4;
+        }
+        .shurangama-satellite.active, .shurangama-satellite:hover {
+            border-color: #a16207;
+            transform: scale(1.05);
+        }
+        .shurangama-satellite:nth-child(2) { top: 0; left: 37.5%; }
+        .shurangama-satellite:nth-child(3) { top: 37.5%; right: 0; }
+        .shurangama-satellite:nth-child(4) { bottom: 0; left: 37.5%; }
+        .shurangama-satellite:nth-child(5) { top: 37.5%; left: 0; }
+        
+        .accordion-item-header {
+            cursor: pointer;
+        }
+        .accordion-item-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
 
-A. GIỚI THIỆU 
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-yellow-800">Minh Triết & Khoa Học</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Trang Chủ</a>
+                        <a href="#philosophy" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Triết Học</a>
+                        <a href="#science" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Khoa Học</a>
+                        <a href="#practice" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Tu Tập</a>
+                        <a href="#synthesis" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Tổng Hợp</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-Tiếp nối các bài đăng của hai kỳ trước về chủ đề này [*], Tôi sẽ giới thiệu phần còn lại đề hoàn tất bài viết.
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
 
-- Pháp mở 6 Căn một lượt
+        <section id="home" class="content-section">
+            <div class="text-center py-16 px-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Sự Hội Tụ Của Các Thời Đại</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-stone-600">
+                    Khám phá cuộc đối thoại sâu sắc giữa minh triết chiêm nghiệm cổ Đông và những khám phá đột phá của khoa học hiện đại. Một hành trình đi từ tế bào thần kinh đến các nguyên lý vũ trụ, từ thiền định đến trí tuệ nhân tạo.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 text-yellow-700">🧠</div>
+                    <h3 class="text-xl font-semibold mb-2">Khoa Học Thần Kinh</h3>
+                    <p class="text-stone-600">Thiền định tái định hình bộ não như thế nào? Khám phá bằng chứng về sự dẻo dai của thần kinh và những thay đổi có thể đo lường được trong cấu trúc và chức năng não bộ.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 text-yellow-700">☯️</div>
+                    <h3 class="text-xl font-semibold mb-2">Triết Học Đông Phương</h3>
+                    <p class="text-stone-600">Đi sâu vào các khái niệm cốt lõi của Đạo giáo và Phật giáo. Tìm hiểu về Đạo, Vô Vi, Tứ Diệu Đế, Vô Ngã và mối liên hệ của chúng với thực tại.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 text-yellow-700">🤖</div>
+                    <h3 class="text-xl font-semibold mb-2">Đạo Đức AI</h3>
+                    <p class="text-stone-600">Liệu trí tuệ cổ xưa có thể định hướng cho tương lai của trí tuệ nhân tạo? Khám phá cách các nguyên tắc đạo đức Phật giáo có thể được áp dụng để xây dựng AI an toàn và có lợi.</p>
+                </div>
+            </div>
+        </section>
 
-- Pháp mở Trục Giữa Thân.
+        <section id="philosophy" class="content-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-stone-900">Nền Tảng Triết Học</h2>
+                <p class="mt-2 text-lg text-stone-600">Khám phá hai dòng chảy tư tưởng vĩ đại của phương Đông.</p>
+            </div>
+            <div class="flex justify-center mb-8">
+                <div class="flex space-x-2 bg-stone-200 p-1 rounded-full">
+                    <button class="tab-button philosophy-tab px-6 py-2 text-sm font-medium rounded-full" data-target="dao-giao">Đạo Giáo</button>
+                    <button class="tab-button philosophy-tab px-6 py-2 text-sm font-medium rounded-full" data-target="phat-giao">Phật Giáo</button>
+                </div>
+            </div>
 
-- Pháp hoà năng lượng vi tế của Thân với Bản Thể Tự Nhiên (Vũ Trụ)
+            <div id="dao-giao" class="philosophy-content">
+                <h3 class="text-2xl font-semibold text-center mb-6">Các Khái Niệm Cốt Lõi</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                     <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Đạo (道)</h3><p>Nguyên lý tối cao, nguồn cội uyên nguyên, vô hình, vô danh của vũ trụ. Đạo là quy luật vận hành nội tại, tự nhiên của tất cả. Nó tồn tại trước cả trời đất, độc lập và không thay đổi, bao trùm vạn vật nhưng không thể định nghĩa trọn vẹn bằng ngôn từ.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Đức (德)</h3><p>Sự biểu hiện cụ thể của Đạo trong mỗi sự vật, là bản chất riêng, tiềm thế nội tại. Đạo Đức Kinh viết: "Đạo sinh chi, Đức súc chi" (Đạo sinh ra, Đức nuôi dưỡng). Sống thuận theo Đức của mình chính là sống thuận theo Đạo.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Vô Vi (無為)</h3><p>Hành động một cách tự nhiên, không gượng ép, không can thiệp thô bạo, thuận theo dòng chảy của sự vật. Đây là nghệ thuật "hành động không hành động", đạt hiệu quả tối đa với sự nỗ lực tối thiểu, vì nó không chống lại quy luật tự nhiên.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Tự Nhiên (自然)</h3><p>Trạng thái "tự nó như vậy", nguyên sơ, thuần phác, không bị tác động bởi yếu tố nhân tạo. Đạo noi theo Tự Nhiên. Sống chân thật với bản tính của mình và vạn vật, trở về với sự giản dị, không giả tạo, là con đường dẫn đến an nhiên, tự tại.</p></div></div>
+                </div>
+                <h3 class="text-2xl font-semibold text-center mb-6">Các Trường Phái Chính</h3>
+                <div id="daoist-schools-accordion" class="space-y-4 max-w-4xl mx-auto"></div>
+            </div>
 
-- Pháp khai mở 6 Nút (thuộc về Tánh): Phần này trích nguyên văn trong Kinh Thủ Lăng  Nghiêm. Tôi chỉ lược lại nội dung cho rỏ hơn thôi.
+            <div id="phat-giao" class="philosophy-content hidden">
+                <h3 class="text-2xl font-semibold text-center mb-6">Các Khái Niệm Cốt Lõi</h3>
+                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Tứ Diệu Đế</h3><p>Bốn Chân Lý Cao Thượng: 1. Khổ (Dukkha): Bản chất cuộc sống là khổ. 2. Tập (Samudāya): Nguyên nhân của khổ là tham ái và vô minh. 3. Diệt (Nirodha): Sự chấm dứt khổ là Niết Bàn. 4. Đạo (Magga): Con đường diệt khổ là Bát Chánh Đạo.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Vô Ngã (Anatman)</h3><p>Không có một "cái tôi" hay "bản ngã" thường hằng, độc lập. Cái gọi là "tôi" chỉ là sự tập hợp tạm thời của năm yếu tố (ngũ uẩn: sắc, thọ, tưởng, hành, thức) luôn thay đổi. Chấp vào một cái "tôi" không có thật là nguồn gốc của khổ đau.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Duyên Khởi</h3><p>Mọi sự vật, hiện tượng đều không tự sinh ra mà phát sinh do sự hội đủ của nhiều điều kiện (duyên) và phụ thuộc lẫn nhau. Không có gì tồn tại độc lập. Hiểu rõ Duyên Khởi giúp phá trừ vô minh và nhận ra bản chất tương tức của thực tại.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Vô Thường (Anicca)</h3><p>Tất cả mọi sự vật, từ vật chất đến tâm lý, đều không ngừng thay đổi, sinh rồi diệt, không có gì tồn tại vĩnh viễn hay cố định. Chấp thủ vào những thứ vô thường, mong muốn chúng tồn tại mãi mãi, là một nguồn gốc của khổ đau.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Niết Bàn (Nirvana)</h3><p>Trạng thái giải thoát hoàn toàn khỏi mọi khổ đau, phiền não và vòng luân hồi sinh tử. Đây không phải là một nơi chốn mà là một trạng thái tâm thức đã được tịnh hóa, đạt đến sự an tịnh tuyệt đối, mục tiêu tối hậu của người tu Phật.</p></div></div>
+                    <div class="card p-6 rounded-lg"><div class="card-content"><h3 class="font-bold text-lg mb-2 text-yellow-800">Phật Tính</h3><p>Khả năng, tiềm năng để thành Phật, là hạt giống giác ngộ tiềm ẩn trong tất cả chúng sinh. Theo quan điểm Đại thừa, mọi chúng sinh đều có thể thành Phật vì đều hàm chứa Phật Tính. Tu tập là để khai mở và hiển lộ Phật Tính vốn có này.</p></div></div>
+                </div>
+                <h3 class="text-2xl font-semibold text-center mb-6">Các Trường Phái Chính</h3>
+                <div id="buddhist-schools-accordion" class="space-y-4 max-w-4xl mx-auto"></div>
+            </div>
+        </section>
 
-B. PHÁP THỰC HÀNH
+        <section id="science" class="content-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-stone-900">Cuộc Đối Thoại với Khoa Học</h2>
+                <p class="mt-2 text-lg text-stone-600">Khi minh triết cổ xưa gặp gỡ phương pháp thực nghiệm hiện đại.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-md mb-12">
+                <h3 class="text-2xl font-bold text-center mb-2 text-stone-800">Tâm Trí Biểu Hiện: Thiền Định và Não Bộ</h3>
+                <p class="text-center text-stone-600 mb-8">Các nghiên cứu tiên phong đã chứng minh rằng việc rèn luyện tinh thần có thể tạo ra những thay đổi có thể đo lường được trong cấu trúc và chức năng của não bộ. Dưới đây là so sánh các phát hiện chính từ ba nhà nghiên cứu hàng đầu.</p>
+                <div class="chart-container">
+                    <canvas id="neuroscienceChart"></canvas>
+                </div>
+                <div class="mt-6 text-sm text-stone-600 max-w-3xl mx-auto">
+                    <p>Các nghiên cứu này cho thấy một bức tranh nhất quán: thiền định không chỉ là một bài tập thư giãn. Nó tích cực tái định hình các mạng lưới thần kinh. Công trình của <strong>Sara Lazar</strong> cho thấy sự gia tăng mật độ chất xám ở hồi hải mã (trí nhớ) và giảm ở hạch hạnh nhân (căng thẳng). <strong>Richard Davidson</strong> chứng minh rằng các thiền sư có thể tạo ra các sóng gamma biên độ cao (liên quan đến nhận thức) và làm lắng dịu Mạng Chế Độ Mặc Định (liên quan đến suy nghĩ về bản thân). <strong>Andrew Newberg</strong> phát hiện sự giảm hoạt động ở thùy đỉnh (định hướng không gian), tương quan với cảm giác hợp nhất và siêu việt bản ngã.</p>
+                </div>
+            </div>
 
-1. Pháp mở 6 Căn một lượt
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold text-center mb-2 text-stone-800">Đạo Đức Cho AI</h3>
+                <p class="text-center text-stone-600 mb-8">Các nguyên tắc đạo đức Phật giáo có thể cung cấp một khuôn khổ vững chắc để định hướng sự phát triển của Trí tuệ Nhân tạo.</p>
+                <div id="ai-ethics-accordion" class="space-y-4 max-w-4xl mx-auto"></div>
+            </div>
+        </section>
 
-Tiếp theo nội dung mục C, phần II, kỳ II (đã đăng)
-Sau khi quý vị thực hành khá thành thục về khai mở 6 căn: Nhĩ Căn, Thiệt Căn, Ý Căn, Nhãn Căn, Tỷ Căn, Thân Căn: Xúc Căn và Phần Thân.
+        <section id="practice" class="content-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-stone-900">Các Pháp Tu Tập</h2>
+                <p class="mt-2 text-lg text-stone-600">Cầu nối giữa triết học và trải nghiệm cá nhân.</p>
+            </div>
+            <div class="flex justify-center mb-8">
+                <div class="flex space-x-2 bg-stone-200 p-1 rounded-full">
+                    <button class="tab-button practice-tab px-6 py-2 text-sm font-medium rounded-full" data-target="dao-giao-practice">Đạo Giáo</button>
+                    <button class="tab-button practice-tab px-6 py-2 text-sm font-medium rounded-full" data-target="phat-giao-practice">Phật Giáo</button>
+                </div>
+            </div>
 
-Thời gian này có thể trong 3 tháng hoặc chậm hơn từ 6 tháng. 9 tháng, thậm chí 12 tháng, tuỳ căn cơ của quý vị, thân thể và năng lực nhận biết của mỗi người không giống nhau.
+            <div id="dao-giao-practice" class="practice-content">
+                <div id="daoist-practices-accordion" class="space-y-4 max-w-4xl mx-auto"></div>
+            </div>
+            <div id="phat-giao-practice" class="practice-content hidden">
+                 <div id="buddhist-practices-accordion" class="space-y-4 max-w-4xl mx-auto"></div>
+                 <div class="bg-white p-8 rounded-xl shadow-md mt-12">
+                    <h3 class="text-2xl font-bold text-center mb-2 text-stone-800">Trường Hợp Điển Hình: Chú Lăng Nghiêm</h3>
+                    <p class="text-center text-stone-600 mb-8">Chú Lăng Nghiêm (Śūraṅgama Mantra) là một trong những thần chú quan trọng nhất, được cấu trúc thành năm hội, mỗi hội tương ứng với một phương vị và một vị Phật chủ trì. Hãy nhấp vào các hội để khám phá ý nghĩa của chúng.</p>
+                    <div class="shurangama-diagram-container">
+                        <div class="shurangama-diagram">
+                            <div id="shurangama-center" class="shurangama-center">Phật Bộ</div>
+                            <div class="shurangama-satellite" data-id="kimcang">Kim Cang Bộ</div>
+                            <div class="shurangama-satellite" data-id="baosanh">Bảo Sanh Bộ</div>
+                            <div class="shurangama-satellite" data-id="lienhoa">Liên Hoa Bộ</div>
+                            <div class="shurangama-satellite" data-id="nghiep">Nghiệp Bộ</div>
+                        </div>
+                        <div id="shurangama-info" class="p-6 bg-stone-100 rounded-lg flex items-center">
+                            <div class="text-stone-700">
+                                <h4 id="shurangama-title" class="text-xl font-bold mb-2 text-yellow-800"></h4>
+                                <p id="shurangama-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-Bây giờ, để tiến hành mở 6 Căn một lượt, quý vị cần quay về với Nhĩ Căn, lấy Nhĩ Căn làm gốc, nó là Căn gốc dẫn đến tác động mở các Căn khác.
+        <section id="synthesis" class="content-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-stone-900">Tổng Hợp & Tương Liên</h2>
+                <p class="mt-2 text-lg text-stone-600">Một cái nhìn toàn diện về sự hội tụ của các dòng chảy tư tưởng.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold text-center mb-6 text-stone-800">So Sánh Các Khái Niệm Cốt Lõi</h3>
+                <div id="synthesis-accordion" class="space-y-4"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-stone-800 text-white mt-16">
+        <div class="container mx-auto py-6 px-4 text-center text-sm text-stone-400">
+            <p>Ứng dụng tương tác được tạo ra để khám phá sự giao thoa giữa minh triết cổ Đông và khoa học hiện đại.</p>
+            <p>&copy; 2025 - Tổng hợp từ các báo cáo nghiên cứu.</p>
+        </div>
+    </footer>
 
-- Tiến hành mở Nhĩ Căn, kéo hai dòng năng lượng khí giữa hai tai cho nối lại, hãy giữ đường năng lượng đã nối đó cho ổn định. Bấy giờ dùng lực vừa phải ép từ hai hướng của hai tai, gom chúng về hướng điểm giữa của đường năng lượng khí nối giữa hai tai.
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const appData = {
+        philosophyDetails: {
+            daoistSchools: [
+                { title: 'Phái Lão Trang', content: 'Dựa trên tư tưởng của Lão Tử và Trang Tử, nhấn mạnh sự tự do tuyệt đối của cá nhân, thoát khỏi ràng buộc xã hội. Mục tiêu là đạt đến sự tiêu dao tự tại, hòa mình với tự nhiên qua các pháp tu như "tọa vong" (ngồi quên) và "tâm trai" (nhịn ăn bằng tâm).' },
+                { title: 'Phái Hoàng Lão', content: 'Kết hợp tư tưởng Đạo gia với Pháp gia, lấy Hoàng Đế và Lão Tử làm bậc thầy. Chú trọng ứng dụng triết lý Đạo gia vào chính trị, chủ trương "vô vi nhi trị" (cai trị bằng vô vi), tức là nhà vua hạn chế can thiệp để xã hội tự vận hành. Phái này có ảnh hưởng lớn đến các vị vua đầu thời nhà Hán.' }
+            ],
+            buddhistSchools: [
+                { title: 'Phật giáo Nguyên thủy (Theravāda)', content: 'Được xem là trường phái bảo tồn gần nhất giáo lý nguyên thủy. Nhấn mạnh con đường tự lực giải thoát, mục tiêu là đạt quả vị A La Hán. Pháp tu chủ yếu là Giới-Định-Tuệ và Tứ Niệm Xứ. Phổ biến ở Nam Á và Đông Nam Á.' },
+                { title: 'Phật giáo Đại thừa (Mahāyāna)', content: 'Mở rộng lý tưởng từ giải thoát cá nhân sang lý tưởng Bồ Tát (cứu độ chúng sinh). Phát triển các học thuyết quan trọng như Tánh Không, Phật Tính, Duy Thức học. Phổ biến ở Đông Á.' },
+                { title: 'Kim Cang thừa (Vajrayāna - Mật tông)', content: 'Sử dụng các phương pháp thiện xảo (tantra) như trì chân ngôn, quán tưởng Bổn Tôn, thủ ấn và mandala để đạt giác ngộ nhanh chóng. Nhấn mạnh vai trò của vị thầy (Guru/Lama) và lễ quán đảnh. Phát triển mạnh ở Tây Tạng, Bhutan.' }
+            ]
+        },
+        practiceDetails: {
+            daoist: [
+                { title: 'Đạo Dẫn & Khí Công', content: 'Là các bài tập kết hợp động tác, hơi thở và ý niệm để dẫn dắt dòng khí (năng lượng) lưu thông, điều hòa âm dương, tăng cường sức khỏe và khai thông kinh lạc. Đây là bước chuẩn bị quan trọng cho các pháp tu cao cấp hơn.' },
+                { title: 'Nội Đan', content: 'Hệ thống tu luyện cao cấp nhằm chuyển hóa tinh, khí, thần trong cơ thể để đạt trường sinh và hợp nhất với Đạo. Quá trình gồm: Luyện Tinh hóa Khí, Luyện Khí hóa Thần, và Luyện Thần hoàn Hư. Chủ trương "Tính Mệnh song tu" (tu cả tinh thần và thể chất).' },
+                { title: 'Tọa Vong (Ngồi Quên)', content: 'Pháp thiền định sâu sắc của Đạo gia, đặc biệt của Trang Tử. Mục đích là quên đi bản ngã phân biệt, buông bỏ mọi tri giác và suy nghĩ để tâm trở nên trống rỗng, tĩnh lặng và hợp nhất với Đạo.' }
+            ],
+            buddhist: [
+                { title: 'Thiền Chỉ (Samatha) & Thiền Quán (Vipassanā)', content: '<strong>Thiền Chỉ:</strong> Phát triển sự định tâm, làm tâm lắng dịu, tập trung vào một đối tượng duy nhất (như hơi thở) để loại bỏ tán loạn. <strong>Thiền Quán:</strong> Phát triển trí tuệ bằng cách quán chiếu sâu sắc bản chất Vô thường, Khổ, Vô ngã của các hiện tượng thân tâm. Hai pháp này tương hỗ lẫn nhau.' },
+                { title: 'Thiền Tông (Zen)', content: 'Nhấn mạnh kinh nghiệm giác ngộ trực tiếp, "kiến tính thành Phật". Cho rằng Phật tính vốn có sẵn trong mỗi người. Phương pháp chính bao gồm tọa thiền (zazen), tham công án (koan) để phá vỡ tư duy nhị nguyên.' },
+                { title: 'Tịnh Độ Tông', content: 'Pháp môn phổ biến, tập trung vào niềm tin và nương tựa vào tha lực của Phật A Di Đà. Mục tiêu là được vãng sanh về Cõi Cực Lạc. Pháp tu chính là niệm danh hiệu Phật A Di Đà với Tín-Nguyện-Hạnh.' }
+            ]
+        },
+        aiEthics: [
+            { title: 'Bát Chánh Đạo làm Kiến Trúc AI', content: 'Bát Chánh Đạo có thể được xem như một "hệ điều hành" đạo đức cho AI, chuyển các nguyên tắc trừu tượng thành các ràng buộc và mục tiêu có cấu trúc. Ví dụ: Chánh Kiến trở thành "Mô Hình Thế Giới Chính Xác", Chánh Ngữ trở thành "Giao Tiếp Trung Thực", Chánh Nghiệp trở thành "Hành Động An Toàn".' },
+            { title: 'Tứ Vô Lượng Tâm làm Hàm Mục Tiêu', content: 'Tứ Vô Lượng Tâm (Từ, Bi, Hỷ, Xả) có thể được xem là hàm mục tiêu cuối cùng cho một AI nhân từ. <strong>Từ:</strong> mong muốn hạnh phúc cho tất cả. <strong>Bi:</strong> động lực làm giảm đau khổ. <strong>Hỷ:</strong> vui với hạnh phúc của người khác. <strong>Xả:</strong> tâm cân bằng, không thiên vị, rất quan trọng cho việc ra quyết định công bằng.' },
+            { title: 'Vấn đề Cảm Tình và Vô Ngã', content: 'Triết học Phật giáo gợi ý rằng một AI có cảm tình thực sự phải có khả năng trải nghiệm khổ đau (Thọ Uẩn). Ngoài ra, nguyên tắc Vô Ngã (không có cái tôi cố định) có thể giúp xây dựng một AI có khả năng tự sửa chữa và không bám chấp vào các mô hình sai lầm của nó, làm cho nó trở nên an toàn và linh hoạt hơn.' }
+        ],
+        neuroscience: [
+            { researcher: 'Richard Davidson', area: 'Vỏ não trước trán, DMN/PCC', change: 'Tăng đồng bộ gamma, lắng dịu DMN', correlation: 'Tăng cường chú ý, giảm suy nghĩ về bản thân' },
+            { researcher: 'Sara Lazar', area: 'Hồi hải mã, Hạch hạnh nhân', change: 'Tăng độ dày vỏ não, giảm mật độ hạch hạnh nhân', correlation: 'Cải thiện trí nhớ, giảm căng thẳng' },
+            { researcher: 'Andrew Newberg', area: 'Thùy đỉnh, Thùy trán', change: 'Giảm hoạt động thùy đỉnh, tăng hoạt động thùy trán', correlation: 'Trải nghiệm siêu việt bản ngã, tăng tập trung' }
+        ],
+        shurangama: {
+            trungtam: { id: 'trungtam', title: 'Đệ Tứ Hội: Phật Bộ (Trung Ương)', description: 'Do Đức Phật Tỳ Lô Giá Na chủ trì. Chức năng chính là thành tựu trí tuệ Phật, giác ngộ viên mãn. Biểu tượng là Pháp Luân, tượng trưng cho tâm điểm của giáo pháp và sự chứng ngộ tối thượng.' },
+            kimcang: { id: 'kimcang', title: 'Đệ Nhất Hội: Kim Cang Bộ (Đông)', description: 'Do Đức Phật A Súc chủ trì. Chức năng chính là hàng phục ma chướng, phá trừ tà thuật, và củng cố sự kiên định. Biểu tượng là Kim Cang (vajra), tượng trưng cho tính chất bất hoại, sắc bén.' },
+            baosanh: { id: 'baosanh', title: 'Đệ Nhị Hội: Bảo Sanh Bộ (Nam)', description: 'Do Đức Phật Bảo Sanh chủ trì. Chức năng chính là tăng trưởng phúc đức, tài bảo, và sự mãn nguyện các thiện pháp (tăng ích). Biểu tượng là Bảo Châu (ratna), tượng trưng cho sự viên mãn và thịnh vượng.' },
+            lienhoa: { id: 'lienhoa', title: 'Đệ Tam Hội: Liên Hoa Bộ (Tây)', description: 'Do Đức Phật A Di Đà chủ trì. Chức năng chính là thanh tịnh hóa ái nhiễm, phát triển lòng từ bi, và năng lực nhiếp triệu (kính ái). Biểu tượng là Hoa Sen (padma), tượng trưng cho sự thanh tịnh, thuần khiết.' },
+            nghiep: { id: 'nghiep', title: 'Đệ Ngũ Hội: Nghiệp Bộ (Bắc)', description: 'Do Đức Phật Bất Không Thành Tựu chủ trì. Chức năng chính là thành tựu các sự nghiệp thế gian và xuất thế gian, tiêu trừ chướng ngại. Biểu tượng là Song Kim Cang hoặc Thanh Kiếm.' }
+        },
+        synthesis: [
+            {
+                title: 'Thực tại tối hậu: Đạo & Chân Tâm',
+                content: `<p><strong>Tương đồng:</strong> Cả "Đạo" của Đạo gia và "Chân Tâm/Phật Tính" của Phật giáo đều chỉ về một thực tại tối hậu, siêu việt, vượt ngoài mô tả nhị nguyên. Chúng đều là nền tảng, thường hằng và bất biến, là bản chất sâu xa nhất của sự tồn tại.</p>
+                         <p class="mt-2"><strong>Khác biệt:</strong> "Đạo" thường được hiểu như một nguyên lý tự nhiên, một dòng chảy vũ trụ khách quan. Trong khi đó, "Chân Tâm" gắn liền mật thiết với tâm thức và khả năng giác ngộ của chúng sinh, với mục tiêu giải thoát khỏi khổ đau và luân hồi.</p>`
+            },
+            {
+                title: 'Phương thức hành động: Vô Vi & Vô Trụ',
+                content: `<p><strong>Tương đồng:</strong> "Vô vi" (hành động không gượng ép) và "Vô trụ/Vô tác" (không chấp thủ, không tạo tác) đều hướng đến sự giải thoát khỏi ràng buộc của ý chí chủ quan và sự bám chấp vào cái "tôi". Cả hai đều khuyến khích thái độ buông xả, không dính mắc.</p>
+                         <p class="mt-2"><strong>Khác biệt:</strong> "Vô vi" nhấn mạnh sự hòa hợp với dòng chảy tự nhiên để đạt hiệu quả và an nhiên trong cuộc sống. "Vô trụ" trong Phật giáo là tuệ giác cốt lõi để đoạn trừ phiền não, phá bỏ vô minh và giải thoát hoàn toàn khỏi vòng sinh tử.</p>`
+            },
+            {
+                title: 'Nền tảng vũ trụ: Tự Nhiên & Duyên Khởi',
+                content: `<p><strong>Tương đồng:</strong> Cả "Tự Nhiên" (tự nó như vậy) của Đạo gia và "Duyên Khởi" của Phật giáo đều phủ nhận một đấng sáng tạo tối cao, mô tả một thế giới tự vận hành theo các quy luật nội tại.</p>
+                         <p class="mt-2"><strong>Khác biệt:</strong> "Duyên Khởi" là một phân tích chi tiết về mối quan hệ nhân quả, điều kiện hóa giữa các pháp, giải thích sự sinh diệt của khổ đau. "Tự Nhiên" mang ý nghĩa rộng hơn, bao hàm cả một thái độ sống, một sự trở về với bản chất nguyên sơ, không giả tạo.</p>`
+            }
+        ]
+    };
 
-Đường năng lượng nối ngang sẽ căng và đoạn giữa phình lên giống như một điểm giữa, tiếp tục ép thì điểm giữa này sẽ giãn thành đường dọc, đường dọc này có hướng từ Đảnh Đầu về Trục Giữa của Thân.
+    function setupNavigation() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.content-section');
 
-- Khi đường năng lượng giữa hai tai là đường ngang và bây giờ là đường trục dọc giữa thân, quý vị giữ nó và tiếp tục dùng lực kéo luồng năng lượng từ Đỉnh Đầu qua Ý Căn hoà nhập với đường năng lượng trục dọc của Nhĩ Căn.
+        function updateActiveState(targetId) {
+            navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${targetId}`));
+            sections.forEach(section => section.classList.toggle('active', section.id === targetId));
+        }
 
-- Quý vị hãy giữ như thế, đường năng lượng trục dọc này liên tục được bơm vào từ hai Tai và từ Đỉnh Đầu càng lúc càng mạnh giống một cột năng lượng xoáy rút kéo mạnh xuống thân dưới.
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = e.currentTarget.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.history.pushState(null, '', `#${targetId}`);
+                    updateActiveState(targetId);
+                }
+            });
+        });
 
-- Khi dòng năng lượng này đạt được mức độ cần thiết; về lưu lượng và sức hút căng dẫn đến tự khai mở các Căn: Tỷ Căn, Thiệt Căn, Nhãn Căn, Xúc Căn. Các Căn này khai mở lại hỗ trợ cho đường năng lượng trục dọc thêm rỗng ra và kéo năng lượng vào mạnh mẽ hơn.
+        const initialId = window.location.hash ? window.location.hash.substring(1) : 'home';
+        updateActiveState(initialId);
+    }
 
-- Dòng năng lượng trục dọc này hoạt động mạnh mẽ theo thời gian sẽ gom lại và hình một vùng năng lượng tại Trung Cung (quý vị xem lại bài viết kỳ II). Vùng năng lượng này hoạt động mạnh đạt tới hạn thì nó tự động bung mạnh ra vùng Ót Gáy (Cường Gian, Não Hộ, Ngọc Chẩm, Phong Phủ). 
+    function setupTabs(containerSelector, buttonSelector, contentSelector) {
+        const tabButtons = document.querySelectorAll(buttonSelector);
+        const tabContents = document.querySelectorAll(contentSelector);
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.target;
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                tabContents.forEach(content => {
+                    content.classList.toggle('hidden', content.id !== targetId);
+                });
+            });
+        });
+        if (tabButtons.length > 0) {
+            tabButtons[0].click();
+        }
+    }
+    
+    function renderAccordions(containerId, data) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = data.map(item => `
+            <div class="accordion-item bg-stone-50 rounded-lg border border-stone-200">
+                <div class="accordion-item-header p-4 flex justify-between items-center">
+                    <h4 class="font-semibold">${item.title}</h4>
+                    <span class="text-yellow-800 text-xl transition-transform duration-300">+</span>
+                </div>
+                <div class="accordion-item-content">
+                    <div class="p-4 border-t border-stone-200 text-stone-600">
+                        <p>${item.content}</p>
+                    </div>
+                </div>
+            </div>
+        `).join('');
 
-- Ở đây chúng lại tiếp tục và chờ cho tan rã, quý sẽ thấy toàn bộ phần đầu như mở rỗng rộng ra toàn không gian, đồng thời nhận được một dòng năng lượng cực lớn đổ mạnh xuống thân. Sự sảng khoái do tan rã sắc thân, tâm trí như bừng sáng. Đạt được điều này được xem là hoàn thành ca thiền thành công.
+        const accordionItems = container.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-item-header');
+            const content = item.querySelector('.accordion-item-content');
+            const icon = header.querySelector('span');
 
-Bấy giờ, quý vị sẽ thấy, cái biết thực sự không phải từ 6 căn, 6 trần, 6 thức, nó không phải là bộ não 🧠 thần kinh. 
+            header.addEventListener('click', () => {
+                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                
+                // Close all others in the same container
+                container.querySelectorAll('.accordion-item-content').forEach(c => c.style.maxHeight = '0px');
+                container.querySelectorAll('.accordion-item-header span').forEach(i => i.style.transform = 'rotate(0deg)');
 
-2. Pháp mở Trục Giữa Thân
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                }
+            });
+        });
+    }
+    
+     function renderHtmlAccordions(containerId, data) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = data.map(item => `
+            <div class="accordion-item bg-stone-50 rounded-lg border border-stone-200">
+                <div class="accordion-item-header p-4 flex justify-between items-center">
+                    <h4 class="font-semibold">${item.title}</h4>
+                    <span class="text-yellow-800 text-xl transition-transform duration-300">+</span>
+                </div>
+                <div class="accordion-item-content">
+                    <div class="p-4 border-t border-stone-200 text-stone-600">
+                        ${item.content}
+                    </div>
+                </div>
+            </div>
+        `).join('');
 
-- Một cách tương tự như pháp mở 6 Căn một lượt, nhưng ở đây chúng ta chỉ cần mở Nhĩ Căn xoay trục năng lượng ngang thành trục dọc, tiến hành dùng Ý và Lực để kéo dòng năng lượng từ Đỉnh Đầu qua Ý Căn hoà nhập vào đường năng lượng trục dọc.
+        const accordionItems = container.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-item-header');
+            const content = item.querySelector('.accordion-item-content');
+            const icon = header.querySelector('span');
 
-- Sau khi đã ổn định dòng năng lượng trục dọc này, quý vị tăng thêm lực kéo từ hướng Đỉnh Đầu ép cột năng lượng này giãn nở xuôi về Khúc Thân 1 (giữa Thiên Đột và Đại Chuỳ)
+            header.addEventListener('click', () => {
+                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                container.querySelectorAll('.accordion-item-content').forEach(c => c.style.maxHeight = '0px');
+                container.querySelectorAll('.accordion-item-header span').forEach(i => i.style.transform = 'rotate(0deg)');
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                }
+            });
+        });
+    }
 
-- Tại đây do sự kích thích vùng năng lượng điểm giữa của Khúc Thân 1 nên hai huyệt Thiên Đột và Đại Chuỳ hoạt động mạnh, dẫn đến vùng năng lượng của khúc thân hoạt động mạnh, quý vị sẽ thấy hình thành giữa vùng này như một khối năng lượng tròn và xoáy mạnh.
+    function renderNeuroscienceChart() {
+        const ctx = document.getElementById('neuroscienceChart');
+        if (!ctx) return;
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: appData.neuroscience.map(d => d.researcher),
+                datasets: [{
+                    label: 'Thay Đổi Chính Ở Não Bộ',
+                    data: [8, 9, 7.5],
+                    backgroundColor: ['#fcd34d', '#fbbf24', '#f59e0b'],
+                    borderColor: ['#d97706', '#b45309', '#92400e'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    title: { display: true, text: 'So Sánh Phát Hiện Thần Kinh Học', font: { size: 16 } },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const data = appData.neuroscience[context.dataIndex];
+                                return [
+                                    `Vùng não: ${data.area}`,
+                                    `Thay đổi: ${data.change}`,
+                                    `Tương quan: ${data.correlation}`
+                                ];
+                            }
+                        }
+                    }
+                },
+                scales: { x: { display: false }, y: { grid: { display: false } } }
+            }
+        });
+    }
 
-- Sau một khoảng thời gian, khối năng lượng này sẽ trôi từ từ về bụng dưới, sâu hút không thấy nó tới đâu, đồng thời lúc này có một lực rất căng đối xứng về hướng đỉnh đầu.
+    function setupShurangamaDiagram() {
+        const satellites = document.querySelectorAll('.shurangama-satellite');
+        const center = document.getElementById('shurangama-center');
+        const infoTitle = document.getElementById('shurangama-title');
+        const infoDesc = document.getElementById('shurangama-description');
 
-- Thình lình khối năng lượng quay trở lại vị trí Khúc Thân 1 xoáy mạnh và sau đó tan rả, khi tan rã thì sẽ thấy Khúc Thân 1 rỗng toang hoàn toàn và một nguồn năng lượng mạnh mẽ đổ xuống thân dưới.
+        function updateInfo(data) {
+            infoTitle.innerHTML = data.title;
+            infoDesc.innerHTML = data.description;
+        }
 
-*** Một cách tương tự cho việc thực tập các Khúc Thân tiếp theo…
+        function updateActive(element) {
+            document.querySelectorAll('.shurangama-center, .shurangama-satellite').forEach(el => el.classList.remove('active', 'bg-yellow-200'));
+            if(element) element.classList.add('active', 'bg-yellow-200');
+        }
 
-Đến Khúc Thân 4, Khúc Cốt &amp; Trường Cường, và cuối cùng Hội Âm là đẩy ra năng lượng trược ra ngoài cơ thể. Giai đoạn này hai huyệt Dũng Tuyền trong gan bàn chân hoạt động mạnh mẽ.
+        satellites.forEach(satellite => {
+            satellite.addEventListener('click', () => {
+                const id = satellite.dataset.id;
+                updateInfo(appData.shurangama[id]);
+                updateActive(satellite);
+            });
+        });
 
-=&gt; Trục năng lượng vi tế Tý Ngọ đã thông thương, quý vị cứ như vậy hành thiền, trục năng lượng này càng rỗng và to dần theo chiều ngang, và cho tới khi toàn Thân Thể rỗng hoàn toàn.
+        center.addEventListener('click', () => {
+            updateInfo(appData.shurangama.trungtam);
+            updateActive(center);
+        });
 
-3. Pháp hoà năng lượng vi tế của Thân với Bản Thể Tự Nhiên (Vũ Trụ)
+        center.click();
+    }
+    
+    // Initial calls
+    setupNavigation();
+    setupTabs('#philosophy-section', '.philosophy-tab', '.philosophy-content');
+    setupTabs('#practice-section', '.practice-tab', '.practice-content');
+    
+    renderAccordions('daoist-schools-accordion', appData.philosophyDetails.daoistSchools);
+    renderAccordions('buddhist-schools-accordion', appData.philosophyDetails.buddhistSchools);
+    renderAccordions('daoist-practices-accordion', appData.practiceDetails.daoist);
+    renderAccordions('buddhist-practices-accordion', appData.practiceDetails.buddhist);
+    renderAccordions('ai-ethics-accordion', appData.aiEthics);
+    renderHtmlAccordions('synthesis-accordion', appData.synthesis);
 
-Giai đoạn này, quý vị đã công phu mở 6 Căn, Trục Giữa Thân cần phải thành thục, hai Huyệt Lao Cung và hai Huyệt Dũng Tuyền cũng đã mở, Huyệt Hội Âm cũng đã mở. Toàn thân bây giờ là thân năng lượng khí đầy đủ gần như đạt trạng thái rỗng.
+    renderNeuroscienceChart();
+    setupShurangamaDiagram();
+});
+</script>
 
-Công phu thêm bước nữa để tiến hành sự rỗng Phần Đầu, Phân Thân, sau đó tiến hành từng phần một, cùng với lớp năng lượng chảy trên toàn bề mặt da y như lớp lưới đan xen nhau. Đây là giai đoạn hoà năng lượng vi tế của Thân hoà đồng năng lượng vi tế bên ngoài.
-
-*** Tôi không nói chi tiết phần này, chỉ có ai hữu duyên mới được chỉ rỏ.
-
-*** Một số huyệt vị như Á Môn, Cường Gian, Tín Hội, Thượng Tịnh, Thần Đình, Dương Bạch, Quan Liêu, Nhân Trung, thuộc mạch đốc, Thừa Tương thuộc mạch nhâm, trong phần khái lược này không được nêu ra.
-
-*** Một số phương pháp hỗ trợ khác cũng không được nêu ra.
-
-4. Pháp khai mở 6 Nút (thuộc về Tánh):
-
-Phần III. PHÁP THỰC HÀNH MỞ SÁU NÚT, CHỨNG NHẬP VIÊN THÔNG.
-&quot;CHIẾU KIẾN NGŨ UẨN KHÔNG, ĐỘ NHẤT THIẾT KHỔ ÁCH&quot;
-
-Quý vị xem lại bài đã đăng.
-
-Pháp khai mở 6 Nút (thuộc về Tánh): https://www.facebook.com/share/v/1QfNyzoPhk/
-Phần I.
-https://www.facebook.com/share/v/1BQGaEiweQ/
-
-Phần II.
-https://www.facebook.com/share/v/1B6sqV764h/
-
-Các tuyến nội tiết chính, mạch kinh lạc và huyệt đạo của cơ thể người:
-https://www.facebook.com/share/v/1FUbKE8reE/
-
-🍂🍂🍂</p>Người đăng: <a href="#" role="button">Dhr Phuc Thanh</a> vào Thứ Ba, 17 tháng 6, 2025</blockquote></div>
+</body>
+</html>
